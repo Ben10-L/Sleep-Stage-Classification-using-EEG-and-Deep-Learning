@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.png">
+    <img src="docs/assets/logo-light.png" alt="EEG Sleep Stage Classification logo" width="140">
+  </picture>
+</p>
+
 # Automatic Sleep Stage Classification from EEG
 
 **A reproducible, modular research-software project for five-class sleep staging using the Sleep-EDF Expanded dataset.**
