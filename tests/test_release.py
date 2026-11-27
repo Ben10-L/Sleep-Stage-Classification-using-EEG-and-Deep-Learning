@@ -34,7 +34,8 @@ def test_notebook_code_is_syntactically_valid(name):
 
 def test_release_contains_readme_and_images():
     readme=(ROOT/"README.md").read_text(encoding="utf8")
-    assert "No real-data performance claim" in readme
+    assert "## Real-data pilot results" in readme
+    assert "not clinical validation" in readme.lower()
     assert (ROOT/"figures/03_sleep_stage_patterns.png").exists()
     assert (ROOT/".github/workflows/ci.yml").exists()
     assert (ROOT/"CITATION.cff").exists()
