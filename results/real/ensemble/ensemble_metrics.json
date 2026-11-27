@@ -1,0 +1,94 @@
+{
+  "note": "Fixed uniform ensemble. Do not select ensemble based on test performance.",
+  "accuracy": 0.8080808080808081,
+  "balanced_accuracy": 0.7699281289509838,
+  "macro_f1": 0.7674319353648218,
+  "cohen_kappa": 0.7338875304682242,
+  "confusion_matrix": [
+    [
+      214,
+      65,
+      0,
+      0,
+      2
+    ],
+    [
+      7,
+      105,
+      22,
+      1,
+      63
+    ],
+    [
+      1,
+      12,
+      824,
+      17,
+      111
+    ],
+    [
+      0,
+      0,
+      29,
+      238,
+      0
+    ],
+    [
+      1,
+      61,
+      7,
+      0,
+      299
+    ]
+  ],
+  "classification_report": {
+    "W": {
+      "precision": 0.9596412556053812,
+      "recall": 0.7615658362989324,
+      "f1-score": 0.8492063492063492,
+      "support": 281.0
+    },
+    "N1": {
+      "precision": 0.43209876543209874,
+      "recall": 0.5303030303030303,
+      "f1-score": 0.47619047619047616,
+      "support": 198.0
+    },
+    "N2": {
+      "precision": 0.9342403628117913,
+      "recall": 0.8538860103626943,
+      "f1-score": 0.8922577152138603,
+      "support": 965.0
+    },
+    "N3": {
+      "precision": 0.9296875,
+      "recall": 0.8913857677902621,
+      "f1-score": 0.9101338432122371,
+      "support": 267.0
+    },
+    "REM": {
+      "precision": 0.6294736842105263,
+      "recall": 0.8125,
+      "f1-score": 0.7093712930011863,
+      "support": 368.0
+    },
+    "accuracy": 0.8080808080808081,
+    "macro avg": {
+      "precision": 0.7770283136119596,
+      "recall": 0.7699281289509838,
+      "f1-score": 0.7674319353648218,
+      "support": 2079.0
+    },
+    "weighted avg": {
+      "precision": 0.8353196617525348,
+      "recall": 0.8080808080808081,
+      "f1-score": 0.8167367799693015,
+      "support": 2079.0
+    }
+  },
+  "models": [
+    "results/real/cnn/cnn_test_predictions.csv",
+    "results/real/lstm/lstm_test_predictions.csv",
+    "results/real/transformer/transformer_test_predictions.csv"
+  ]
+}

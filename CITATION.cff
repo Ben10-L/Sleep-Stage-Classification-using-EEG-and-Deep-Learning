@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite this repository and the original Sleep-EDF dataset."
+title: "EEG Sleep Stage Classification: Reproducible Research Software"
+type: software
+authors:
+  - family-names: Beniaich
+    given-names: Oussama
+repository-code: "https://github.com/Ben10-L/eeg-sleep-stage-classification"
+license: MIT
+keywords:
+  - EEG
+  - sleep staging
+  - machine learning
+  - computational neuroscience

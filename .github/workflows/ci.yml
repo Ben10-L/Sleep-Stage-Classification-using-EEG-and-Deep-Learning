@@ -1,0 +1,28 @@
+name: Python CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.12']
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install project
+        run: python -m pip install --upgrade pip && python -m pip install -e '.[dev]'
+      - name: Run unit tests
+        run: python -m pytest -q
+      - name: Generate and inspect synthetic demo
+        run: |
+          python scripts/run_pipeline.py demo --subjects 6 --repeats 1
+          python -c 'from eeg_sleep.dataset import load_arrays; X,y,groups,ids,fs=load_arrays("data/processed/synthetic_demo.npz"); assert X.shape[1:] == (2,3000); print(X.shape)'

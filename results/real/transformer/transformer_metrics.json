@@ -1,0 +1,171 @@
+{
+  "note": "Held-out subject evaluation; synthetic demos are not scientific evidence.",
+  "accuracy": 0.759018759018759,
+  "balanced_accuracy": 0.7284058464168561,
+  "macro_f1": 0.7278099506660928,
+  "cohen_kappa": 0.6682186844809473,
+  "confusion_matrix": [
+    [
+      212,
+      66,
+      0,
+      0,
+      3
+    ],
+    [
+      7,
+      109,
+      22,
+      1,
+      59
+    ],
+    [
+      1,
+      12,
+      778,
+      12,
+      162
+    ],
+    [
+      0,
+      0,
+      44,
+      223,
+      0
+    ],
+    [
+      1,
+      101,
+      10,
+      0,
+      256
+    ]
+  ],
+  "classification_report": {
+    "W": {
+      "precision": 0.9592760180995475,
+      "recall": 0.7544483985765125,
+      "f1-score": 0.8446215139442231,
+      "support": 281.0
+    },
+    "N1": {
+      "precision": 0.3784722222222222,
+      "recall": 0.5505050505050505,
+      "f1-score": 0.448559670781893,
+      "support": 198.0
+    },
+    "N2": {
+      "precision": 0.9110070257611241,
+      "recall": 0.8062176165803109,
+      "f1-score": 0.8554150632215503,
+      "support": 965.0
+    },
+    "N3": {
+      "precision": 0.9449152542372882,
+      "recall": 0.8352059925093633,
+      "f1-score": 0.8866799204771372,
+      "support": 267.0
+    },
+    "REM": {
+      "precision": 0.5333333333333333,
+      "recall": 0.6956521739130435,
+      "f1-score": 0.6037735849056604,
+      "support": 368.0
+    },
+    "accuracy": 0.759018759018759,
+    "macro avg": {
+      "precision": 0.7454007707307031,
+      "recall": 0.7284058464168561,
+      "f1-score": 0.7278099506660928,
+      "support": 2079.0
+    },
+    "weighted avg": {
+      "precision": 0.8043169218342858,
+      "recall": 0.759018759018759,
+      "f1-score": 0.7746807187371891,
+      "support": 2079.0
+    }
+  },
+  "macro_f1_subject_ci95": [
+    0.6580892474370204,
+    0.7979276286945025
+  ],
+  "data_source": "Sleep-EDF Expanded / PhysioNet",
+  "dataset_file": "data/processed/sleep_edf_trimmed.npz",
+  "dataset_sha256": "6d2a4e2979761a6e05156a09a97770ad71f4183df397c574019be9b178e6d4c5",
+  "random_seed": 42,
+  "subject_split": {
+    "train": [
+      "SC400",
+      "SC402",
+      "SC403",
+      "SC405",
+      "SC408"
+    ],
+    "validation": [
+      "SC404",
+      "SC406"
+    ],
+    "test": [
+      "SC401",
+      "SC407"
+    ]
+  },
+  "architecture": "transformer",
+  "best_epoch": 5,
+  "validation_macro_f1": 0.6442695439003134,
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 0.7812534813546804,
+      "validation_macro_f1": 0.44278308928515103
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.6050850468265556,
+      "validation_macro_f1": 0.5567321897385178
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.5706058963875457,
+      "validation_macro_f1": 0.4669789234412784
+    },
+    {
+      "epoch": 4,
+      "training_loss": 0.5416831707510981,
+      "validation_macro_f1": 0.6282461500372678
+    },
+    {
+      "epoch": 5,
+      "training_loss": 0.5216085886563396,
+      "validation_macro_f1": 0.6442695439003134
+    },
+    {
+      "epoch": 6,
+      "training_loss": 0.500067730830615,
+      "validation_macro_f1": 0.5152523431316273
+    },
+    {
+      "epoch": 7,
+      "training_loss": 0.4835179563624636,
+      "validation_macro_f1": 0.5692736994447466
+    },
+    {
+      "epoch": 8,
+      "training_loss": 0.4646906696492,
+      "validation_macro_f1": 0.6142513854635426
+    },
+    {
+      "epoch": 9,
+      "training_loss": 0.4619464190180533,
+      "validation_macro_f1": 0.5456870820483044
+    }
+  ],
+  "n_train": 4624,
+  "n_val": 2078,
+  "n_test": 2079,
+  "n_train_subjects": 5,
+  "n_val_subjects": 2,
+  "n_test_subjects": 2,
+  "device": "mps"
+}

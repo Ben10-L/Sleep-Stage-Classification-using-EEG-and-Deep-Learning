@@ -1,0 +1,105 @@
+{
+  "note": "Evaluation on held-out subjects. Synthetic datasets are demonstration only, not research evidence.",
+  "accuracy": 0.7984607984607984,
+  "balanced_accuracy": 0.7554940287786693,
+  "macro_f1": 0.7504808975916945,
+  "cohen_kappa": 0.7193902680623583,
+  "confusion_matrix": [
+    [
+      197,
+      64,
+      1,
+      15,
+      4
+    ],
+    [
+      9,
+      139,
+      31,
+      1,
+      18
+    ],
+    [
+      2,
+      36,
+      869,
+      16,
+      42
+    ],
+    [
+      1,
+      1,
+      34,
+      231,
+      0
+    ],
+    [
+      1,
+      137,
+      6,
+      0,
+      224
+    ]
+  ],
+  "classification_report": {
+    "W": {
+      "precision": 0.9380952380952381,
+      "recall": 0.701067615658363,
+      "f1-score": 0.8024439918533605,
+      "support": 281.0
+    },
+    "N1": {
+      "precision": 0.3687002652519894,
+      "recall": 0.702020202020202,
+      "f1-score": 0.4834782608695652,
+      "support": 198.0
+    },
+    "N2": {
+      "precision": 0.9234856535600425,
+      "recall": 0.900518134715026,
+      "f1-score": 0.9118572927597062,
+      "support": 965.0
+    },
+    "N3": {
+      "precision": 0.8783269961977186,
+      "recall": 0.8651685393258427,
+      "f1-score": 0.8716981132075472,
+      "support": 267.0
+    },
+    "REM": {
+      "precision": 0.7777777777777778,
+      "recall": 0.6086956521739131,
+      "f1-score": 0.6829268292682927,
+      "support": 368.0
+    },
+    "accuracy": 0.7984607984607984,
+    "macro avg": {
+      "precision": 0.7772771861765533,
+      "recall": 0.7554940287786693,
+      "f1-score": 0.7504808975916945,
+      "support": 2079.0
+    },
+    "weighted avg": {
+      "precision": 0.8410325157850456,
+      "recall": 0.7984607984607984,
+      "f1-score": 0.8105907716561959,
+      "support": 2079.0
+    }
+  },
+  "macro_f1_subject_ci95": [
+    0.6887600293814016,
+    0.8073006385867938
+  ],
+  "selected_by_validation": "logistic_regression",
+  "validation_macro_f1": {
+    "logistic_regression": 0.6695205229913145,
+    "rbf_svm": 0.6441044576882391,
+    "random_forest": 0.6514423232454966
+  },
+  "n_train": 4624,
+  "n_val": 2078,
+  "n_test": 2079,
+  "n_train_subjects": 5,
+  "n_val_subjects": 2,
+  "n_test_subjects": 2
+}

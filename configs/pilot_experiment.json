@@ -1,0 +1,11 @@
+{
+  "dataset": "Sleep-EDF Expanded / Sleep Cassette",
+  "subject_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "recordings": [1],
+  "sampling_rate_hz": 100,
+  "epoch_duration_seconds": 30,
+  "wake_margin_minutes": 30,
+  "split": {"method": "subject-disjoint", "seed": 42},
+  "evaluation_primary_metric": "macro_f1",
+  "status": "pilot protocol: results require actual execution"
+}

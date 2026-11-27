@@ -1,0 +1,10 @@
+{
+  "dataset": "Sleep-EDF Expanded / Sleep Cassette",
+  "cohort": "define eligible participants and nights BEFORE evaluation",
+  "sampling_rate_hz": 100,
+  "epoch_duration_seconds": 30,
+  "wake_margin_minutes": 30,
+  "split": {"method": "subject-disjoint", "seed": 42},
+  "evaluation_primary_metric": "macro_f1",
+  "status": "research plan: preregister protocol and verify annotated timestamps"
+}

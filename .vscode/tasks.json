@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "EEG: run unit tests",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m pytest -q",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "EEG: inspect trimmed dataset",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python scripts/run_pipeline.py inspect --data data/processed/sleep_edf_trimmed.npz",
+      "problemMatcher": []
+    },
+    {
+      "label": "EEG: train CNN on MPS/CPU auto",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python scripts/run_pipeline.py deep --data data/processed/sleep_edf_trimmed.npz --model cnn --epochs 20 --batch-size 16 --device auto --output results/real/cnn",
+      "problemMatcher": []
+    }
+  ]
+}

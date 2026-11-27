@@ -1,0 +1,156 @@
+{
+  "note": "Held-out subject evaluation; synthetic demos are not scientific evidence.",
+  "accuracy": 0.6887926887926888,
+  "balanced_accuracy": 0.6940685418713548,
+  "macro_f1": 0.6794695571071961,
+  "cohen_kappa": 0.5850199543899658,
+  "confusion_matrix": [
+    [
+      201,
+      68,
+      5,
+      2,
+      5
+    ],
+    [
+      4,
+      73,
+      19,
+      2,
+      100
+    ],
+    [
+      7,
+      19,
+      596,
+      17,
+      326
+    ],
+    [
+      1,
+      0,
+      31,
+      235,
+      0
+    ],
+    [
+      3,
+      30,
+      7,
+      1,
+      327
+    ]
+  ],
+  "classification_report": {
+    "W": {
+      "precision": 0.9305555555555556,
+      "recall": 0.7153024911032029,
+      "f1-score": 0.8088531187122736,
+      "support": 281.0
+    },
+    "N1": {
+      "precision": 0.38421052631578945,
+      "recall": 0.3686868686868687,
+      "f1-score": 0.37628865979381443,
+      "support": 198.0
+    },
+    "N2": {
+      "precision": 0.9057750759878419,
+      "recall": 0.6176165803108808,
+      "f1-score": 0.7344423906346272,
+      "support": 965.0
+    },
+    "N3": {
+      "precision": 0.914396887159533,
+      "recall": 0.8801498127340824,
+      "f1-score": 0.8969465648854962,
+      "support": 267.0
+    },
+    "REM": {
+      "precision": 0.4313984168865435,
+      "recall": 0.8885869565217391,
+      "f1-score": 0.5808170515097691,
+      "support": 368.0
+    },
+    "accuracy": 0.6887926887926888,
+    "macro avg": {
+      "precision": 0.7132672923810527,
+      "recall": 0.6940685418713548,
+      "f1-score": 0.6794695571071961,
+      "support": 2079.0
+    },
+    "weighted avg": {
+      "precision": 0.7765903462894412,
+      "recall": 0.6887926887926888,
+      "f1-score": 0.7040669532177788,
+      "support": 2079.0
+    }
+  },
+  "macro_f1_subject_ci95": [
+    0.6130023219903677,
+    0.7326630449180798
+  ],
+  "data_source": "Sleep-EDF Expanded / PhysioNet",
+  "dataset_file": "data/processed/sleep_edf_trimmed.npz",
+  "dataset_sha256": "6d2a4e2979761a6e05156a09a97770ad71f4183df397c574019be9b178e6d4c5",
+  "random_seed": 42,
+  "subject_split": {
+    "train": [
+      "SC400",
+      "SC402",
+      "SC403",
+      "SC405",
+      "SC408"
+    ],
+    "validation": [
+      "SC404",
+      "SC406"
+    ],
+    "test": [
+      "SC401",
+      "SC407"
+    ]
+  },
+  "architecture": "lstm",
+  "best_epoch": 2,
+  "validation_macro_f1": 0.545263114909245,
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 0.9597546892388882,
+      "validation_macro_f1": 0.45552798757039187
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.6674019816012531,
+      "validation_macro_f1": 0.545263114909245
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.618863107733248,
+      "validation_macro_f1": 0.5259095365018241
+    },
+    {
+      "epoch": 4,
+      "training_loss": 0.5856104098956477,
+      "validation_macro_f1": 0.5321349681409793
+    },
+    {
+      "epoch": 5,
+      "training_loss": 0.5405928119759246,
+      "validation_macro_f1": 0.4752630900575333
+    },
+    {
+      "epoch": 6,
+      "training_loss": 0.5172756243123315,
+      "validation_macro_f1": 0.5018609843649614
+    }
+  ],
+  "n_train": 4624,
+  "n_val": 2078,
+  "n_test": 2079,
+  "n_train_subjects": 5,
+  "n_val_subjects": 2,
+  "n_test_subjects": 2,
+  "device": "mps"
+}
